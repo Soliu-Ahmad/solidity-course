@@ -7,8 +7,10 @@ contract SimpleStorage {
 
  // This gets initialized to zero
  // <- This means that this section 
-    uint256 public FavoriteNumber;
-    People public person = People({FavoriteNumber: 2, name: "Soliu"});
+    uint256  FavoriteNumber;
+    
+
+    mapping(string => uint256) public nameToFavoriteNumber;
 
     struct People {
         uint256 FavoriteNumber;
@@ -29,9 +31,11 @@ contract SimpleStorage {
         return FavoriteNumber;
     }
 
+
+        // calldata, memory, storage
     function addPerson(string memory _name, uint256 _favoriteNumber) public {
-        People memory newPerson = People({FavoriteNumber: _favoriteNumber, name: _name});
-        people.push(newPerson);
+        people.push(People(_favoriteNumber, _name));
+        nameToFavoriteNumber[_name] = _favoriteNumber;
     }
 
              
