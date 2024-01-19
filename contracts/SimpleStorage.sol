@@ -24,7 +24,7 @@ contract SimpleStorage {
 
 
     // THIS IS FUNCTION THAT MODIFYING SOLIDITY IN BLOCKCHAIN BECAUSE IT DONTS HAVE VIEW OR PURE 
-    function store(uint256 _favoriteNumber) public {
+    function store(uint256 _favoriteNumber) public virtual  {
         FavoriteNumber = _favoriteNumber;
     }
 
