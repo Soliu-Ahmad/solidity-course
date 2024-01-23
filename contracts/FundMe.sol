@@ -11,11 +11,16 @@ import "@chainlink/contracts/src/v0.8/interfaces/AggregatorV3Interface.sol";
 contract FundMe {
     uint256 public minimumUsd = 50 * 1e18; // 1 * 10 ** 18;
 
+    address[] public funders;
+    mapping(address => uint256) public addressToAmountFunded;
 
-    function fund() public payable {
-        // Want to be able to start a minimum fund amount in USD
+     function fund() public payable {
+// Want to be able to start a minimum fund amount in USD
         // 1. How do we send ETH to this contract
     require(msg.value > 1e18, "Didn't send enough!");
+    // funders.push(msg.sender);
+    funders.push(msg.sender);
+    addressToAmountFunded[msg.sender] = msg.value;
 }
 
 
