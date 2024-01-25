@@ -1,6 +1,6 @@
 {
 	"compiler": {
-		"version": "0.8.0+commit.c7dfd78e"
+		"version": "0.8.8+commit.dddeac2f"
 	},
 	"language": "Solidity",
 	"output": {
@@ -41,7 +41,7 @@
 		"compilationTarget": {
 			"contracts/SafeMathTester.sol": "SafeMathTester"
 		},
-		"evmVersion": "istanbul",
+		"evmVersion": "london",
 		"libraries": {},
 		"metadata": {
 			"bytecodeHash": "ipfs"
@@ -54,11 +54,11 @@
 	},
 	"sources": {
 		"contracts/SafeMathTester.sol": {
-			"keccak256": "0x2988d446d7107adb694f186d8374615421a9b62f45691d4a1d02ad508f37362c",
+			"keccak256": "0x333cde982b261e2379566bb827b00c68386ef9944ebe646c8e3166f99c0197cc",
 			"license": "MIT",
 			"urls": [
-				"bzz-raw://b4cb37d8b2167389cc214f0fc4ea1554b71393e463083ccfbbe1e0f04b07f0bc",
-				"dweb:/ipfs/QmdwcYeZu1d1o9AofMbUWNDQXHMkkbEax7VBsELj4poZrp"
+				"bzz-raw://373debe76000247085f6293b0172cd5ce93f033feb4a218df6a2b61cdd6eba4b",
+				"dweb:/ipfs/QmXHcUUJZP4Cs67ViDiHAhKzDJ1BZBsunKojsGGB36KkS2"
 			]
 		}
 	},
