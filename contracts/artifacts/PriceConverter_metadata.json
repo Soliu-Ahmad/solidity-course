@@ -1,6 +1,6 @@
 {
 	"compiler": {
-		"version": "0.8.22+commit.4fc1097e"
+		"version": "0.8.8+commit.dddeac2f"
 	},
 	"language": "Solidity",
 	"output": {
@@ -20,7 +20,7 @@
 		"compilationTarget": {
 			"contracts/PriceConverter.sol": "PriceConverter"
 		},
-		"evmVersion": "shanghai",
+		"evmVersion": "london",
 		"libraries": {},
 		"metadata": {
 			"bytecodeHash": "ipfs"
